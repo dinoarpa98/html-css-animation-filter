@@ -1,0 +1,168 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: background-color 3s 1s;
+}
+
+.ex-1-square:hover{
+   background-color: red;
+}
+
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 4s 0.2s;
+}
+
+.ex-2-square:hover{
+    width: 100%;
+}
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: border-radius 3s 0.2s;
+}
+
+.ex-3-square:hover{
+border-radius: 60px;
+}
+
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: opacity 2s 0.2s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: width 2s 0.2s, height 2s 0.2s;
+}
+
+.ex-5-square:hover{
+    width: 90px;
+    height: 90px;
+}
+
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover{
+ filter: grayscale(1);
+}
+
+.ex-7-img{
+    transition: filter 3s 0.2s;
+}
+
+.ex-7-img:hover{
+   filter:sepia(1) contrast(1);
+}
+
+.ex-8-img{
+    transition: border-radius,filter 3s 0.5s, 3s 0.5s;
+}
+
+.ex-8-img:hover{
+    filter: sepia(1) contrast(1);
+    border-radius: 40px;
+
+}
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: width 2s 0.3s ,margin 2s 0.3s,border-radius 2s 0.3s ,filter 2s 0.3s;
+}
+
+.ex-9-img:hover{
+    width:700px;
+    margin: 25px 50px;
+    border-radius: 30px;
+    filter: sepia(3) contrast(1);
+}
+
+/* animation */
+
+.ex-10-icon {
+    font-size: 60px;
+    animation: rollin 1s linear infinite;
+}
+
+@keyframes rollin {
+    0%{
+        transform: rotate(1turn);
+    }
+}
+
+
+.ex-11-icon {
+    font-size: 60px;
+    
+}
+
+.ex-11-icon:hover{
+    animation: rollin2 1s linear infinite;
+}
+
+@keyframes rollin2 {
+    50%{
+        transform: rotate(280deg)
+    }
+}
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
